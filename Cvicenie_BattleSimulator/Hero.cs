@@ -15,7 +15,7 @@ namespace Cvicenie_BattleSimulator
         public int Armor { get; set; } = 15; //armor
 
         public bool HeroAttack (Monster monster)
-        {   
+        {
             if (ENG - 20 >= 0)
             {
                 ENG = ENG - 20;              // za jeden utok odcita 20 energie
@@ -29,30 +29,5 @@ namespace Cvicenie_BattleSimulator
             }
 
         }
-        public void TakeDamage(int damage)
-        {
-            int finalDamage = damage - Armor;
-
-            if (finalDamage < 0)
-                finalDamage = 0;
-
-            HP -= finalDamage;
-        }
-
-        public bool HeroDMG(Monster monster)
-        {
-            if (ENG - 20 >= 0)
-            {
-                ENG -= 20;
-                monster.HP -= this.DMG;
-                return true;
-            }
-            else
-            {
-                ENG += 50;
-                return false;
-            }
-        }
-
     }
 }
