@@ -12,13 +12,15 @@ namespace Cvicenie_Pokemon
         public int Health_Max { get; set; }
         public int Damage { get; set; }
         public int Energia { get; set; }
+        public int Energy_Max { get; set; }
 
-        public Hero(int health, int health_Max, int damage, int energia)
+        public Hero(int health, int health_Max, int damage, int energia, int energia_Max)
         {
             Health = health;
             Health_Max = health_Max;
             Damage = damage;
             Energia = energia;
+            Energy_Max = energia_Max;
         }
     }
 }

@@ -19,7 +19,7 @@ namespace Cvicenie_Pokemon
         public MainWindow()
         {
             InitializeComponent();
-            Hero myHero = new Hero(50, 100 ,10, 100);
+            Hero myHero = new Hero(100, 100 ,10, 100,100);
             Enemy myEnemy = new Enemy(200 ,1);
 
             
